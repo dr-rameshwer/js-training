@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompts</title>
+    <script>
+      "use strict";
+      //   alert()it will prompt one message window that will ask the user to press OK.
+      alert("Hello World");
+
+      // Prompts the user to input text and returns the entered text.
+      // If the user clicks the Cancel button or presses Esc, the function returns null.
+      // syntax -  result = prompt(title, [default]);
+
+      let marks = prompt("Enter marks obtained out of 100", 80);
+      alert(`Marks are ${marks}`);
+
+      //confirm() - Displays a message and awaits the user's response,
+      // returning true if the user presses "OK" and false if they click "Cancel" or press Esc.
+
+      let confirmValue = confirm("Are you getting funds?");
+      alert(confirmValue);
+    </script>
+  </head>
+  <body></body>
+</html>
