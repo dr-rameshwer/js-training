@@ -88,6 +88,8 @@ let fName = "Rameshwer";
 
 let lName = "Singh";
 
+console.log(`My name is ${fName}`);
+
 let age = 35;
 
 // Backticks serve as quotes with "extended functionality."
@@ -158,7 +160,8 @@ console.log("***************** Symbol Datatype ********************");
 In JavaScript, the Symbol type is a primitive data type introduced in ECMAScript 6 (ES6). 
 Symbols are unique and immutable values that can be used as identifiers for object properties. 
 They are often employed to create private or hidden properties within objects and to avoid naming conflicts.
-Symbols are created using the Symbol() function, and each symbol is guaranteed to be unique. Here's a simple example:
+Symbols are created using the Symbol() function, and each symbol is guaranteed to be unique.
+ Here's a simple example:
 
 */
 
