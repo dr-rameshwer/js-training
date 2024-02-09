@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let set1 = confirm(
+        "Is your birthday month fall among 1 3 5 7 9 11, if YES Press OK in NO Press Cancel"
+      );
+      let set2 = confirm(
+        "Is your birthday month fall among 2 3 6 7 10 11, if YES Press OK in NO Press Cancel"
+      );
+      let set3 = confirm(
+        "Is your birthday month fall among 4 5 6 7 12, if YES Press OK in NO Press Cancel"
+      );
+      let set4 = confirm(
+        "Is your birthday month fall among 8 9 10 11 12 , if YES Press OK in NO Press Cancel"
+      );
+      let month = 0;
+      if (set1 === true) month = month + 1;
+      if (set2 === true) month = month + 2;
+      if (set3 === true) month = month + 4;
+      if (set4 === true) month = month + 8;
+
+      if (month <= 12) alert(`Your birthday month is ${month}`);
+      else alert("Wrong Input");
+    </script>
+  </head>
+  <body></body>
+</html>
