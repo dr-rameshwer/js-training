@@ -5,6 +5,12 @@ The nullish coalescing operator (??)
 provides a concise syntax to obtain the first "defined" value between two expressions. 
 It returns the value of the first expression 
 if it is not null or undefined; otherwise, it returns the value of the second expression.
+
+The nullish coalescing operator (??) 
+returns the first operand that is not null or undefined. 
+It evaluates the operands from left to right.
+
+
 */
 
 let city;
@@ -17,11 +23,11 @@ console.log(city ?? "Unknown");
 
 //another example
 
-city = "";
-let country = "";
+let myCity = null;
+let country = null;
 let region = "Europe";
 
-console.log(city ?? country ?? region ?? "Unknown");
+console.log(myCity ?? country ?? region ?? "Unknown");
 
 // difference between nullish an OR
 

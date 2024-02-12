@@ -10,13 +10,15 @@ console.log(false || true); // true
 console.log(true || false); // true
 console.log(false || false); // false
 
-// The logical OR operator (||) returns the first truthy value it encounters.
+// The logical OR operator (||) returns
+//the first truthy value it encounters.
 
 /*
 The expression result = value1 || value2 || value3; 
 evaluates its operands from left to right. 
 For each operand, it converts it to a boolean. 
-If the result is true, it stops and returns the original value of that operand. 
+If the result is true, 
+it stops and returns the original value of that operand. 
 If all operands have been evaluated (i.e., all were false), 
 it returns the value of the last operand.
 */
@@ -54,14 +56,14 @@ true || console.log("it will not, will stop once true is there");
 console.log(true && true); // true
 console.log(false && true); // false
 console.log(false && false); // false
-console.log(false && false); // false
 
 // The logical AND operator (&&) finds the first falsy value.
 
 result = value1 && value2 && value3;
 
 /*
-The logical AND operator (&&) evaluates its operands from left to right. 
+The logical AND operator (&&) evaluates its operands 
+from left to right. 
 For each operand, it converts it to a boolean. 
 If the result is false, it stops and returns the original value of that operand. 
 If all operands have been evaluated (i.e., all were truthy), it returns the last operand.
@@ -78,7 +80,7 @@ console.log("hello" && false); // false
 
 let x = 5; // Example value of x
 
-x > 0 && alert("Greater than zero!");
+x > 0 && console.log("Greater than zero!");
 
 // NOT ! operator
 
