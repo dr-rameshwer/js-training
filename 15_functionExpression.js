@@ -31,13 +31,3 @@ let sayHello = greet; // (2) Assign the function to another variable
 
 sayHello(); // Sayonara    // (3) Invoke the function through the new variable
 greet(); // Sayonara    // The original function can still be called directly
-
-/*
-
-In JavaScript, a callback function is a function that is passed 
-as an argument to another function and is executed after a 
-particular operation has been completed. Callbacks are commonly 
-used in asynchronous programming to handle events or responses from 
-asynchronous operations like fetching data from a server, reading files, 
-or handling user input.
-*/

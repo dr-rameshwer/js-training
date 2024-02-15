@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /*
+
+        In JavaScript, a callback function is a function that is passed
+        as an argument to another function and is executed after a
+        particular operation has been completed. Callbacks are commonly
+        used in asynchronous programming to handle events or responses from
+        asynchronous operations like fetching data from a server, reading files,
+        or handling user input.
+        */
+
+      function ask(question, onYes, onCancel) {
+        console.log(question);
+        const response = prompt(
+          "Type 'yes' if you agree, or 'no' if you disagree."
+        );
+
+        if (response.toLowerCase() === "yes") {
+          onYes();
+        } else {
+          onCancel();
+        }
+      }
+
+      function showYes() {
+        console.log("You agreed.");
+      }
+
+      function showCancel() {
+        console.log("You canceled the execution.");
+      }
+
+      // usage: functions showOk, showCancel are passed as arguments to ask
+      ask("Do you agree?", showYes, showCancel);
+
+      //Function Expressions to write an equivalent, shorter function
+
+      ask(
+        "shorter function",
+        function () {
+          alert("function 1");
+        },
+        function () {
+          alert("function2");
+        }
+      );
+    </script>
+
+    <!----
+    NOTE
+    In JavaScript, Function Declarations can be called before they are defined. 
+    This is because JavaScript processes global Function Declarations before executing the script. 
+    This initialization stage allows functions to be visible and callable throughout the script, regardless of 
+    their position in the code. Thus, 
+    JavaScript's internal algorithms ensure that functions declared globally are available for use throughout the script's execution.
+
+    But if we use function expression the it will result in an error    
+
+    -->
+  </head>
+  <body></body>
+</html>
