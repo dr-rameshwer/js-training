@@ -32,7 +32,7 @@ console.log(myCity ?? country ?? region ?? "Unknown");
 // difference between nullish an OR
 
 //The || operator returns the first truthy value.
-//The ?? operator returns the first defined value.
+//The ?? operator returns the first defined value
 
 let height = 0;
 
