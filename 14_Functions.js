@@ -27,12 +27,11 @@ function name(parameter1, parameter2, ... parameterN) {
 call to function
 functionName()
 */
+helloWorld("Ram");
 
 function helloWorld(fName) {
   console.log("Welcome" + fName);
 }
-
-helloWorld("Ram");
 
 function greet(name) {
   console.log("Hello, " + name + "!");

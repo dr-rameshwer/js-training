@@ -31,3 +31,22 @@ let sayHello = greet; // (2) Assign the function to another variable
 
 sayHello(); // Sayonara    // (3) Invoke the function through the new variable
 greet(); // Sayonara    // The original function can still be called directly
+
+/*
+
+An IIFE, which stands for Immediately Invoked Function Expression, 
+is a JavaScript design pattern that allows a function to be executed
+immediately after it's defined. It's a way to encapsulate code within a 
+function scope and execute it immediately without needing to explicitly 
+call the function later.
+
+Here's the basic syntax of an IIFE:
+(function() {
+    // code here
+})();
+
+*/
+
+(function () {
+  console.log("This is an IIFE");
+})();

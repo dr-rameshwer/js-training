@@ -1,7 +1,9 @@
 /*
-Destructuring assignment in JavaScript is a powerful feature that allows you to extract values 
+Destructuring assignment in JavaScript is a powerful feature 
+that allows you to extract values 
 from arrays or properties from objects into distinct variables. 
-It provides a concise syntax to unpack values from arrays or properties from objects into variables.
+It provides a concise syntax to unpack values 
+from arrays or properties from objects into variables.
 */
 
 const numbers = [1, 2, 3, 4, 5];
@@ -18,6 +20,10 @@ const person = {
 };
 
 const { name, age } = person;
+
+const { name: personName, age: personAge } = person;
+
+console.log(personName);
 
 console.log(name); // 'John'
 console.log(age); // 30
@@ -42,7 +48,7 @@ const user = {
 // console.log(twitter); // '@alice'
 
 const numbersDemo = [1, 2, 3, 4, 5];
-const [first, ...others] = numbersDemo;
+const [first, two, ...others] = numbersDemo;
 
 console.log(first); // 1
 console.log(others); // [2, 3, 4, 5]
