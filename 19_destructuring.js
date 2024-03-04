@@ -20,10 +20,13 @@ const person = {
 };
 
 const { name, age } = person;
+console.log(name);
+console.log(age);
 
 const { name: personName, age: personAge } = person;
 
 console.log(personName);
+console.log(personAge);
 
 console.log(name); // 'John'
 console.log(age); // 30
@@ -51,4 +54,5 @@ const numbersDemo = [1, 2, 3, 4, 5];
 const [first, two, ...others] = numbersDemo;
 
 console.log(first); // 1
-console.log(others); // [2, 3, 4, 5]
+console.log(two); // 2
+console.log(others); // [ 3, 4, 5]

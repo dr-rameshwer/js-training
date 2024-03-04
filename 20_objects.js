@@ -1,7 +1,5 @@
 // Create empty objects
 
-let objSample = Object();
-
 let objSample2 = {};
 
 //Object with properties
