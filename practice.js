@@ -33,25 +33,24 @@ const grades = [
 ];
 
 let newNumberMultiplyByTwo = numbers.map((item) => Number(item) * 2);
-{
-  console.log("newNumberMultiplyByTwo", newNumberMultiplyByTwo);
-}
+
+console.log("newNumberMultiplyByTwo", newNumberMultiplyByTwo);
 
 let stringToUpperCase = strings.map((item) => item.toUpperCase(item));
-{
-  console.log("stringToUpperCase", stringToUpperCase);
-}
+
+console.log("stringToUpperCase", stringToUpperCase);
 
 let evenNumbers = numbers.filter((item) => item % 2 === 0);
-{
-  console.log("even", evenNumbers);
-}
+
+console.log("even", evenNumbers);
 
 let includesA = grades.filter((item) => item.student.includes("a"));
 console.log("includesA", includesA);
 
 let moreThan18 = people.filter((item) => item.age >= 18);
 console.log("age more than 18", moreThan18);
+
+let morethan188 = people.filter((i) => i.age > 18);
 
 let findBook = books.find((item) => item.title === "You Don't Know JS");
 console.log(findBook);

@@ -53,7 +53,7 @@ let user = {
 
 let key = "roll number";
 
-// same as user["roll number""] = true;
+// same as user["roll number"] = true;
 user[key] = true;
 
 console.log(user["roll number"]);
@@ -106,11 +106,12 @@ let stuCourse = stuClass;
 let studentClass = {
   class: "MCA",
 };
-let studentCourse = studentClass; // it will just copy the reference
+let studentCourse = studentClass;
+// it will just copy the reference
 
 studentCourse.class = "BCA";
 
-console.log(studentClass);
+console.log("studentClass", studentClass);
 
 let sameA = {};
 let sameB = sameA;
@@ -134,11 +135,12 @@ console.log(stu);
 
 // clone objects
 
-//Object.assign(dest, ...sources) - copies all enumerable own properties from one or more source objects to a target object
+//Object.assign(dest, ...sources) -
+//copies all enumerable own properties from one or more source objects to a target object
 
 let studentCopy = Object.assign({}, stu);
 studentCopy.course = "BCA";
-console.log(studentCopy);
+console.log("studentCopy", studentCopy);
 
 let o1 = { className: "mca" };
 
@@ -153,9 +155,12 @@ console.log("o1", o1);
 //garbage collection
 
 /*
-In JavaScript, when an object no longer has any references pointing to it, 
-it becomes eligible for garbage collection. This means that the memory occupied by 
-that object can be freed up by the JavaScript engine for other use. In this example, 
+In JavaScript, when an object 
+no longer has any references pointing to it, 
+it becomes eligible for garbage collection. 
+This means that the memory occupied by 
+that object can be freed up by the 
+JavaScript engine for other use. In this example, 
 when a is assigned null, the empty object {} 
 that a was originally referencing becomes eligible for garbage 
 collection because there are no more references to it.

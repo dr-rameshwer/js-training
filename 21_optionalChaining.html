@@ -15,7 +15,7 @@
         },
       };
 
-      console.log(obj.address.street);
+      console.log(obj?.address?.street);
       console.log(obj.address);
       console.log(obj.address.town); // better to use like obj?.address?.town
 
@@ -49,7 +49,7 @@ In each case, the ?. operator evaluates the left part for null or undefined and
       console.log(numObj.valueOf()); // Outputs: 10
 
       let date = new Date(); // date is an object
-      console.log(date.valueOf()); // Outputs: milliseconds since epoch
+      console.log("aaa" + date.valueOf()); // Outputs: milliseconds since
     </script>
   </head>
   <body></body>
